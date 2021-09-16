@@ -9,7 +9,7 @@
 <script>
 export default {
   name: 'nav-bar',
-  data() { 
+  data() {
     return {
 
     }

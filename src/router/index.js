@@ -5,12 +5,12 @@ import VueRouter from 'vue-router';
 const originalReplace = VueRouter.prototype.replace
 VueRouter.prototype.replace = function replace(location) {
   return originalReplace.call(this, location).catch(err => err);
-} 
+}
 
-const Home = () => import ('../views/home/home.vue');
-const Cate = () => import ('../views/cate/cate.vue');
-const Shopcart = () => import ('../views/shopcart/shopcart.vue');
-const Profile = () =>  import ('../views/profile/profile.vue');
+const Home = () => import ('../views/home/Home.vue');
+const Cate = () => import ('../views/cate/Cate.vue');
+const Shopcart = () => import ('../views/shopcart/Shopcart.vue');
+const Profile = () =>  import ('../views/profile/Profile.vue');
 
 Vue.use(VueRouter);
 
