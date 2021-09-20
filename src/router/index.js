@@ -11,6 +11,7 @@ const Home = () => import ('../views/home/Home.vue');
 const Cate = () => import ('../views/cate/Cate.vue');
 const Shopcart = () => import ('../views/shopcart/Shopcart.vue');
 const Profile = () =>  import ('../views/profile/Profile.vue');
+const Detail = () =>  import ('../views/detail/Detail.vue');
 
 Vue.use(VueRouter);
 
@@ -34,11 +35,16 @@ const routes=[
   {
     path: '/profile',
     component: Profile
+  },
+  {
+    path: '/detail/:iid',
+    component: Detail
   }
 ]
 
 const router = new VueRouter({
   routes,
+  /*请求模式为history*/
   mode: 'history'
 })
 

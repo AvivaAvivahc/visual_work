@@ -1,3 +1,4 @@
+<!--底部导航栏-->
 <template>
   <tab-bar>
     <tab-bar-item path="/home">

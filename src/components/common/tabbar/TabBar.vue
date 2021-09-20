@@ -1,3 +1,4 @@
+<!--底部导航栏组件-->
 <template>
     <div id="tab-bal">
       <slot></slot>
@@ -7,7 +8,7 @@
 <script>
 export default {
   name: 'TabBar',
-   
+
  }
 </script>
 
@@ -22,5 +23,7 @@ export default {
     bottom: 0;
 
     box-shadow: 0px -1px 1px rgba(100, 100, 100, 0.2);
+
+    z-index: 10;
   }
 </style>

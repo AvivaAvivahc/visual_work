@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-     <router-view></router-view>
+    <!--Keep-Alive功能避免了建立或者重新建立连接-->
+    <!--exclude="Detail"不需要缓存-->
+    <!--<router-view/>加载组件-->
+     <keep-alive exclude="Detail">
+       <router-view/>
+     </keep-alive>
      <main-tab-bar/>
   </div>
 </template>

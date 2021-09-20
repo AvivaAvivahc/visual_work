@@ -1,3 +1,4 @@
+<!--底部导航栏组件-->
 <template>
   <div class="tab-bar-item" @click='itemcilck'>
     <div v-if='!isActive'>
@@ -26,17 +27,20 @@ export default {
   },
   computed:{
     isActive(){
+      /*indexOf返回调用它的 String 对象中第一次出现的指定值的索引,如果未找到该值，则返回 -1*/
       return this.$route.path.indexOf(this.path)!== -1
     },
     activeStyle(){
+      /*根据isActive返回值改变样式*/
       return this.isActive ? {color:this.activeColor} :{}
     }
   },
   methods: {
+    /*点击跳转*/
     itemcilck() {
       this.$router.replace(this.path)
     }
-    
+
   },
  }
 </script>

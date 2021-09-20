@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'cate',
-  data() { 
+  data() {
     return {
 
     }
@@ -16,5 +16,5 @@ export default {
 </script>
 
 <style lang="" scoped>
-  
+
 </style>
